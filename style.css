@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.png);
+    background-size: center;
+    background-position: center ;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 175px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color:#37393b;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid rgb(14, 13, 13);
+    border-radius:20px;
+    outline: none;
+    cursor: pointer;
+}
+.content{
+    width: 100%;   
+    color:#37393b;
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.left-col{
+    margin-left: 1%;
+
+}
+.left-col h1{
+    font-size:50px ;
+    margin: 10px 0 30px;
+    line-height: 50px;
+}
+.left-col small{
+        font-size: 25px;
+}
+.right-col{
+    float:right;
+    margin-right: 10%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.right-col p {
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: 400;
+    margin-right: 25px;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+}
+.crystal img{
+    width: 50px;
+    animation: crystal 7s linear infinite;
+}
+.crystal{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes crystal{
+0% {
+    transform:translateY(0);
+    opacity: 10;
+}
+50% {
+    opacity: 5;
+}
+70% {
+    opacity: 10;
+}
+100% {
+    transform:translateY(-80vh);
+    opacity: 5;
+}
+
+}
+.crystal img:nth-child(1){
+    animation-delay: 2s;
+    width: 35px;
+}
+.crystal img:nth-child(2){
+    animation-delay: 1s;
+    width: 20px;
+}
+.crystal img:nth-child(3){
+    animation-delay: 3s;
+    width: 45px;
+}
+.crystal img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 20px;
+}
+.crystal img:nth-child(5){
+    animation-delay: 2.5s;
+    width: 50px;
+}
+.crystal img:nth-child(6){
+    animation-delay: 6s;
+    width: 15px;
+}
+.crystal img:nth-child(7){
+    animation-delay: 3s;
+    width: 45px;
+}
+.crystal img:nth-child(8){
+    animation-delay: 2s;
+    width: 30px;
+}
+.crystal img:nth-child(9){
+    animation-delay: 7s;
+    width: 30px;
+}
+.crystal img:nth-child(10){
+    animation-delay: 1s;
+    width: 40px;
+}
